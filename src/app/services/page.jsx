@@ -1,11 +1,11 @@
-import React from 'react';
+import Heading from "@/components/services-components/Heading";
+import ServicesList from "@/components/services-components/ServicesList";
 
-const services = () => {
-    return (
-        <div>
-            <h2>service page</h2>
-        </div>
-    );
-};
-
-export default services;
+export default function ServicesPage() {
+  return (
+    <div>
+      <Heading />
+      <ServicesList />
+    </div>
+  );
+}
