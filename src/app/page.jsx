@@ -1,6 +1,8 @@
 import Hero from '@/components/Hero';
 import OurApproach from '@/components/OurApproach';
+import Services from '@/components/Services';
 import WhoWeHelp from '@/components/WhoWeHelp';
+import WhyChooseUs from '@/components/WhyChooseUs';
 import React from 'react';
 
 const page = () => {
@@ -9,6 +11,8 @@ const page = () => {
             <Hero/>
             <WhoWeHelp/>
             <OurApproach/>
+            <Services/>
+            <WhyChooseUs/>
         </div>
     );
 };
