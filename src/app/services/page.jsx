@@ -8,8 +8,8 @@ export default function ServicesPage() {
     <div>
       <Heading />
       <ServicesList />
-      <AgeGroupsSettings/>
       <ProcessSection />
+      <AgeGroupsSettings/>
     </div>
   );
 }
