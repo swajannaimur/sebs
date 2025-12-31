@@ -55,7 +55,7 @@ const services = [
 
 export default function ServicesList() {
   return (
-    <section className="px-6 py-16 lg:px-20 bg-white">
+    <section className="px-6 py-16 lg:px-20 bg-[#F8F7F5]">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((service) => (
