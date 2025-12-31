@@ -45,7 +45,7 @@ const WhoWeHelp = () => {
             </ul>
             <div className="pt-4">
               <a
-                className="text-primary hover:text-blue-700 font-bold flex items-center gap-2 group"
+                className="text-orange-400 hover:text-orange-600 font-bold flex items-center gap-2 group"
                 href="#"
               >
                 Find out if we're a good fit
