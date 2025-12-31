@@ -1,9 +1,14 @@
+import Hero from '@/components/Hero';
+import OurApproach from '@/components/OurApproach';
+import WhoWeHelp from '@/components/WhoWeHelp';
 import React from 'react';
 
 const page = () => {
     return (
         <div>
-            <h2>homepage</h2>
+            <Hero/>
+            <WhoWeHelp/>
+            <OurApproach/>
         </div>
     );
 };
