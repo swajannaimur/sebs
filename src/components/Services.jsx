@@ -35,7 +35,10 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-white via-[#f9f9f9] to-white" id="services">
+    <section
+      className="py-16 bg-gradient-to-b from-white via-[#f9f9f9] to-white"
+      id="services"
+    >
       <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -52,7 +55,6 @@ const Services = () => {
           {services.map((service, index) => (
             <Link key={index} href="#" className="group">
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 w-[300px] h-[420px] flex flex-col">
-                
                 {/* Image */}
                 <div className="h-56 overflow-hidden rounded-t-2xl">
                   <img
@@ -67,18 +69,13 @@ const Services = () => {
                   <h4 className="text-2xl font-bold text-slate-900 group-hover:text-orange-400 transition-colors">
                     {service.title}
                   </h4>
-                  <p className="text-slate-500 text-base">{service.description}</p>
+                  <p className="text-slate-500 text-base">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             </Link>
           ))}
-        </div>
-
-        {/* Mobile CTA */}
-        <div className="mt-10 flex justify-center md:hidden">
-          <button className="w-full max-w-xs px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-bold shadow-md hover:opacity-90 transition-all">
-            View All Services
-          </button>
         </div>
       </div>
     </section>
