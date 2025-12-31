@@ -9,12 +9,12 @@ export default function Navbar() {
   const links = (
     <>
       <Link href="/">
-        <li className="hover:text-[#F97316] transition-colors duration-500 font-semibold">
+        <li className="hover:text-[#F97316] transition-colors duration-500 font-semibold text-slate-900">
           Home
         </li>
       </Link>
       <Link href="/services">
-        <li className="hover:text-[#F97316] transition-colors duration-500 font-semibold">
+        <li className="hover:text-[#F97316] transition-colors duration-500 font-semibold text-slate-900">
           Services
         </li>
       </Link>
@@ -23,13 +23,18 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-surface-light/95  backdrop-blur border-b border-slate-200">
+    <nav className="sticky top-0 z-50 w-full bg-surface-light/95  backdrop-blur border-b border-slate-200 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center">
-              <Image src="/images/logo.png" alt="logo" height={80} width={80} />
+              <Image
+                src="/images/logo-preview.png"
+                alt="logo"
+                height={80}
+                width={80}
+              />
               <div className=" hidden md:flex flex-col">
                 <h1 className="text-xl font-bold tracking-tight text-slate-900 leading-none">
                   Special Effects

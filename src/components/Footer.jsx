@@ -1,11 +1,95 @@
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
-const Footer = () => {
-    return (
-        <div>
-            <h2>this is footer</h2>
+export default function Footer() {
+  return (
+    <footer className="bg-slate-900 text-white pt-16 pb-8 border-t border-slate-800">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-10">
+        {/* Top Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          
+          {/* Brand Info */}
+          <div>
+            <Link href="/">
+              <div className="flex items-center">
+                <Image
+                  src="/images/logo-preview.png"
+                  alt="logo"
+                  height={80}
+                  width={80}
+                />
+                <div className="hidden md:flex flex-col">
+                  <h1 className="text-xl font-bold tracking-tight text-white leading-none">
+                    Special Effects
+                  </h1>
+                  <span className="text-xs font-medium text-slate-500">
+                    Behavioral Services
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            <p className="text-slate-500 mt-4 max-w-sm">
+              Empowering children and families through compassionate,
+              evidence-based behavioral services.
+            </p>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex md:justify-center items-start">
+            <div>
+              <h3 className="text-lg font-bold mb-4 text-white">
+                Follow Us
+              </h3>
+              <div className="flex gap-4">
+                <a
+                  href="#"
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-[#F97316] transition-colors duration-300"
+                >
+                  <FaFacebookF />
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-[#F97316] transition-colors duration-300"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-white">
+              Newsletter
+            </h3>
+            <p className="text-slate-500 text-sm mb-4">
+              Subscribe to get updates and helpful resources.
+            </p>
+            <form className="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full px-4 py-2 rounded-lg bg-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#F97316]"
+              />
+              <button
+                type="submit"
+                className="px-6 py-2 rounded-lg bg-[#F97316] hover:bg-orange-600 text-white text-sm font-bold transition-colors duration-300"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
-    );
-};
 
-export default Footer;
+        {/* Bottom Bar */}
+        <div className="border-t border-slate-800 pt-8">
+          <p className="text-slate-500 text-sm text-center">
+            © 2023 Special Effects Behavioral Services. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
