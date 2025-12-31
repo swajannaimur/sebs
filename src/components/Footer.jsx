@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
           </Link>
 
-            <p className="text-slate-500 mt-4 max-w-sm">
+            <p className="text-white mt-4 max-w-sm">
               Empowering children and families through compassionate,
               evidence-based behavioral services.
             </p>
@@ -56,7 +56,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4 text-white">
               Newsletter
             </h3>
-            <p className="text-slate-500 text-sm mb-4">
+            <p className="text-white text-sm mb-4">
               Subscribe to get updates and helpful resources.
             </p>
             <form className="flex flex-col sm:flex-row gap-3">
@@ -77,8 +77,8 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 pt-8">
-          <p className="text-slate-500 text-sm text-center">
-            © 2023 Special Effects Behavioral Services. All rights reserved.
+          <p className="text-white text-sm text-center">
+            © {new Date().getFullYear()} Special Effects Behavioral Services. All rights reserved.
           </p>
         </div>
       </div>
