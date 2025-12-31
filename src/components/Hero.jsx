@@ -1,4 +1,6 @@
 import React from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 
 const Hero = () => {
   return (
@@ -27,9 +29,9 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-            <button className="h-12 px-8 rounded-lg bg-accent hover:bg-orange-600 text-white font-bold text-base shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+            <button className="h-12 px-8 rounded-lg  bg-orange-400 hover:bg-orange-500 text-white font-bold text-base shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
               Get Started
-              <span className="material-symbols-outlined text-lg">arrow_forward</span>
+              <span className="material-symbols-outlined text-lg"><FaLongArrowAltRight/></span>
             </button>
             <button className="h-12 px-8 rounded-lg bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-base backdrop-blur-sm transition-colors">
               Learn More
@@ -44,7 +46,7 @@ const Hero = () => {
               className="absolute inset-0 bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0ocBVonDyHFmhkrttrIzGB98plepBxON2wMrvFj0OJ8ahAGfDSRcKzAAZG6kuiLRvjPZWKX-xikvw3pgPROQbudKRlleJk9T9d293NOR8EzRDmfM68uniBvlB8OwK4CPGNZAecAyrh5LBP9bod0B623G8b_FJ42M4e5ho6q0piQgmOFuKp3DXZlh7BRHYawkhBosRu4q_1bzaWwh9ONFde_87GwzD5c52SxATk9_HCSmbUeDUeWL-w9JT8JnA4JNvtSavLvQdKD4')",
+                  "url('/images/hero.jpg')",
               }}
             ></div>
 
@@ -53,7 +55,7 @@ const Hero = () => {
             <div className="absolute bottom-6 left-6 right-6">
               <div className="bg-white/95 backdrop-blur p-4 rounded-xl shadow-lg flex items-center gap-4">
                 <div className="size-12 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                  <span className="material-symbols-outlined">sentiment_very_satisfied</span>
+                  <span className="material-symbols-outlined">🥰</span>
                 </div>
                 <div>
                   <p className="text-slate-900 font-bold text-sm">98% Parent Satisfaction</p>
