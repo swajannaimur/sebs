@@ -39,7 +39,7 @@ export default function ProcessSection() {
       <div className="max-w-[960px] mx-auto flex flex-col gap-12">
         {/* Section Title */}
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-[#1E3A8A] text-3xl font-bold leading-tight mb-4">
+          <h2 className="text-[#1E3A8A] text-3xl font-extrabold leading-tight mb-4">
             How Our Services Work
           </h2>
           <p className="text-[#475569]">
@@ -55,14 +55,14 @@ export default function ProcessSection() {
 
           {steps.map((step, index) => {
             const StepIcon = iconMap[step.icon];
-            const isActive = index === 0; // first step is active, you can adjust logic
+            const isActive = index === 0; // first step is active
 
             return (
               <div
                 key={step.id}
                 className={`relative flex flex-col md:flex-row gap-8 md:gap-0 items-center mb-12 ${
                   step.id === steps.length ? "mb-0" : ""
-                }`}
+                } group`}
               >
                 {step.align === "left" ? (
                   <>
@@ -76,10 +76,10 @@ export default function ProcessSection() {
 
                     {/* Icon */}
                     <div
-                      className={`relative z-10 flex items-center justify-center size-12 rounded-full shadow-lg shrink-0 ${
+                      className={`relative z-10 flex items-center justify-center size-12 rounded-full shadow-lg shrink-0 transition-all duration-300 ${
                         isActive
-                          ? "bg-orange-400 text-white border-2 border-orange-400"
-                          : "bg-white text-orange-400 border-2 border-orange-400"
+                          ? "bg-[#1E3A8A] text-white border-2 border-[#1E3A8A]"
+                          : "bg-white text-orange-400 border-2 border-orange-400 group-hover:border-[#1E3A8A] group-hover:text-[#1E3A8A]"
                       }`}
                     >
                       {StepIcon && <StepIcon className="text-2xl" />}
@@ -93,10 +93,10 @@ export default function ProcessSection() {
 
                     {/* Icon */}
                     <div
-                      className={`relative z-10 flex items-center justify-center size-12 rounded-full shadow-lg shrink-0 ${
+                      className={`relative z-10 flex items-center justify-center size-12 rounded-full shadow-lg shrink-0 transition-all duration-300 ${
                         isActive
-                          ? "bg-orange-400 text-white border-2 border-orange-400"
-                          : "bg-white text-orange-400 border-2 border-orange-400"
+                          ? "bg-[#1E3A8A] text-white border-2 border-[#1E3A8A]"
+                          : "bg-white text-orange-400 border-2 border-orange-400 group-hover:border-[#1E3A8A] group-hover:text-[#1E3A8A]"
                       }`}
                     >
                       {StepIcon && <StepIcon className="text-2xl" />}
