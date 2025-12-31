@@ -36,8 +36,8 @@ const Services = () => {
 
   return (
     <section
-      className="py-16 bg-gradient-to-b from-white via-[#f9f9f9] to-white"
       id="services"
+      className="py-16 bg-gradient-to-b from-white via-[#f9f9f9] to-white"
     >
       <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Section Header */}
@@ -50,11 +50,11 @@ const Services = () => {
           </h3>
         </div>
 
-        {/* Services Grid: 4 cards per row on large screens, with gap */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 justify-items-center">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 justify-items-center">
           {services.map((service, index) => (
-            <Link key={index} href="#" className="group">
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 w-[300px] h-[420px] flex flex-col">
+            <Link key={index} href="#" className="group w-full">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 w-full sm:w-[300px] h-[420px] flex flex-col">
                 {/* Image */}
                 <div className="h-56 overflow-hidden rounded-t-2xl">
                   <img

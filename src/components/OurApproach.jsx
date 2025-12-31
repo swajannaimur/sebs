@@ -24,7 +24,7 @@ export default function OurApproach() {
       {/* Content Wrapper */}
       <div className="relative z-10 py-20">
         <div className="max-w-[960px] mx-auto px-4 text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#F97316] mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
             Our Methodology
           </h2>
           <p className="text-white text-lg max-w-2xl mx-auto">
