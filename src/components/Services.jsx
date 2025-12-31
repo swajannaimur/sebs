@@ -75,11 +75,11 @@ const Services = () => {
         </div>
 
         {/* Mobile CTA */}
-        <div className="mt-10 flex justify-center md:hidden">
+        {/* <div className="mt-10 flex justify-center md:hidden">
           <button className="w-full max-w-xs px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-bold shadow-md hover:opacity-90 transition-all">
             View All Services
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
