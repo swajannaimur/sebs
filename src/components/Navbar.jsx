@@ -32,17 +32,9 @@ export default function Navbar() {
               <Image
                 src="/images/Logo.png"
                 alt="logo"
-                height={80}
-                width={80}
+                height={120}
+                width={120}
               />
-              <div className=" hidden md:flex flex-col">
-                <h1 className="text-xl font-bold tracking-tight text-slate-900 leading-none">
-                  Special Effects
-                </h1>
-                <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
-                  Behavioral Services
-                </span>
-              </div>
             </div>
           </Link>
 

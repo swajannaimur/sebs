@@ -12,23 +12,15 @@ export default function Footer() {
           {/* Brand Info */}
           <div>
             <Link href="/">
-              <div className="flex items-center">
-                <Image
-                  src="/images/Logo.png"
-                  alt="logo"
-                  height={80}
-                  width={80}
-                />
-                <div className="hidden md:flex flex-col">
-                  <h1 className="text-xl font-bold tracking-tight text-white leading-none">
-                    Special Effects
-                  </h1>
-                  <span className="text-xs font-medium text-slate-500">
-                    Behavioral Services
-                  </span>
-                </div>
-              </div>
-            </Link>
+            <div className="flex items-center">
+              <Image
+                src="/images/Logo.png"
+                alt="logo"
+                height={120}
+                width={120}
+              />
+            </div>
+          </Link>
 
             <p className="text-slate-500 mt-4 max-w-sm">
               Empowering children and families through compassionate,
