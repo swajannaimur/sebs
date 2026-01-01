@@ -18,6 +18,11 @@ export default function Navbar() {
           Services
         </li>
       </Link>
+      <Link href="/ourStory">
+        <li className="hover:text-[#F97316] transition-colors duration-500 font-semibold text-slate-900">
+          Our Story
+        </li>
+      </Link>
     </>
   );
   const [isMenuOpen, setIsMenuOpen] = useState(false);
