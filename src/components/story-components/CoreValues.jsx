@@ -46,7 +46,9 @@ export default function CoreValues() {
     <section className="bg-white px-6 py-16 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto flex flex-col gap-12">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-400">Core Values</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-400">
+            Core Values
+          </h2>
           <p className="text-[#111418]/70">
             The five pillars that guide every interaction and decision we make.
           </p>
@@ -58,7 +60,7 @@ export default function CoreValues() {
             return (
               <div
                 key={value.title}
-                className={`bg-white p-8 rounded-2xl border border-slate-200 hover:border-primary/30 hover:shadow-md transition-all
+                className={`bg-white p-8 rounded-2xl border border-slate-200 hover:scale-105 hover:-translate-y-2 hover:shadow-lg transition-all duration-300 
                   ${
                     index === 3
                       ? "lg:col-start-1 lg:translate-x-1/2"
@@ -68,10 +70,10 @@ export default function CoreValues() {
                   }
                 `}
               >
-                <div className="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6">
+                <div className="size-12 rounded-lg bg-orange-100 flex items-center justify-center text-orange-500 mb-6">
                   <Icon className="text-2xl" />
                 </div>
-                <h3 className="text-primary text-xl font-bold mb-3">
+                <h3 className="text-[#1E3A8A] text-xl font-bold mb-3">
                   {value.title}
                 </h3>
                 <p className="text-[#111418]/70">{value.description}</p>

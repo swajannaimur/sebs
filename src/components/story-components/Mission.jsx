@@ -22,7 +22,7 @@ const Mission = () => {
 
       {/* Content Wrapper */}
       <div className="relative z-10 py-20">
-        <div className="max-w-[1280px] mx-auto px-4 md:px-10 grid md:grid-cols-2 gap-8">
+        <div className="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-2 gap-8">
           {/* Card 1 */}
           <div
             className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 
@@ -30,12 +30,12 @@ const Mission = () => {
                    hover:scale-[1.05] hover:-translate-y-2 hover:shadow-lg"
           >
             <div
-              className="w-14 h-14 rounded-xl bg-orange-100 text-accent flex items-center justify-center mb-6 
-                     transition-transform duration-500 hover:rotate-[20deg] hover:scale-110"
+              className="w-14 h-14 rounded-xl bg-orange-100 text-orange-500 flex items-center justify-center mb-6 
+                     transition-transform duration-500 hover:rotate-20 hover:scale-110"
             >
-              <LuHeart className="text-3xl" />
+              <LuHeart className="text-3xl " />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3">
+            <h3 className="text-xl font-bold text-[#1E3A8A] mb-3">
               Our Mission
             </h3>
             <p className="text-slate-600 leading-relaxed">
@@ -51,12 +51,12 @@ const Mission = () => {
                    hover:scale-[1.05] hover:-translate-y-2 hover:shadow-lg"
           >
             <div
-              className="w-14 h-14 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-6 
+              className="w-14 h-14 rounded-xl bg-orange-100 text-orange-500 flex items-center justify-center mb-6 
                      transition-transform duration-500 hover:rotate-[20deg] hover:scale-110"
             >
               <MdGroups2 className="text-3xl" />
             </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-3">
+            <h3 className="text-xl font-bold text-[#1E3A8A] mb-3">
               Our Vision
             </h3>
             <p className="text-slate-600 leading-relaxed">
