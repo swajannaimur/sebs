@@ -54,7 +54,8 @@ export default function Footer() {
             <p className="text-white text-sm mb-4">
               Subscribe to get updates and helpful resources.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3">
+
+            {/* <form className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -63,6 +64,55 @@ export default function Footer() {
               <button
                 type="submit"
                 className="px-6 py-2 rounded-lg bg-[#F97316] hover:bg-orange-600 hover:-translate-y-0.5 duration-300 cursor-pointer text-white text-sm font-bold transition-all"
+              >
+                Subscribe
+              </button>
+            </form> */}
+
+            <form
+              action="https://formsubmit.co/rahulwp24@gmail.com"
+              method="POST"
+              className="flex flex-col sm:flex-row gap-3"
+            >
+              {/* FormSubmit Configuration - MUST HAVE */}
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Newsletter Subscription"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+
+              {/* Spam protection - hide this field */}
+              <input type="text" name="_honey" style={{ display: "none" }} />
+
+              {/* Redirect after submit - optional but helpful */}
+              <input
+                type="hidden"
+                name="_next"
+                value="http://localhost:3000/"
+              />
+
+              {/* Auto response to user */}
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Thank you for subscribing to our newsletter! We'll keep you updated with our latest services and resources."
+              />
+
+              {/* Email field - MUST have name attribute */}
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                className="w-full px-4 py-2 rounded-lg bg-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#F97316]"
+              />
+
+              {/* Submit button */}
+              <button
+                type="submit"
+                className="px-6 py-2 rounded-lg bg-[#F97316] hover:bg-orange-600 hover:-translate-y-0.5 cursor-pointer text-white text-sm font-bold transition-all duration-300"
               >
                 Subscribe
               </button>
