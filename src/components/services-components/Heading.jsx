@@ -14,8 +14,8 @@ export default function Heading() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-20 flex flex-col gap-2">
-        <h1 className="text-orange-400 text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
-         Our Services
+        <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight">
+          Our <span className="text-orange-400">Services</span>
         </h1>
 
         <p className="text-blue-100 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto">

@@ -13,7 +13,7 @@ export default function ServicesPage() {
       <ProcessSection />
       <AgeGroupsSettings />
       <ApproachSection />
-      <CallToAction/>
+      <CallToAction />
     </div>
   );
 }

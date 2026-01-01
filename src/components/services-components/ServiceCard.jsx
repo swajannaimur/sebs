@@ -7,7 +7,7 @@ export default function ServiceCard({ service }) {
   const Icon = iconMap[icon];
 
   return (
-    <div className="p-6 rounded-xl border border-slate-200 hover:shadow-lg transition bg-white flex flex-col gap-4">
+    <div className="p-6 rounded-xl border border-slate-200 transition bg-white flex flex-col gap-4 duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg">
       {/* Icon */}
       <div className="size-12 rounded-lg bg-orange-100 flex items-center justify-center">
         {Icon && <Icon className="text-orange-500 text-3xl" />}

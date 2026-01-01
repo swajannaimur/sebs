@@ -36,7 +36,7 @@ const steps = [
 export default function ProcessSection() {
   return (
     <section className="px-4 sm:px-6 py-12 sm:py-16 lg:px-20 bg-white">
-      <div className="max-w-[960px] mx-auto flex flex-col gap-8 sm:gap-12">
+      <div className="max-w-240 mx-auto flex flex-col gap-8 sm:gap-12">
         {/* Section Title */}
         <div className="text-center max-w-2xl mx-auto px-2">
           <h2 className="text-[#1E3A8A] text-2xl sm:text-3xl font-extrabold leading-tight mb-3 sm:mb-4">
