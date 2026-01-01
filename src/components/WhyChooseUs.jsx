@@ -5,7 +5,7 @@ import { MdVerifiedUser, MdEditNote, MdHealthAndSafety } from "react-icons/md";
 const WhyChooseUs = () => {
   return (
     <section className="relative py-20 overflow-hidden bg-primary">
-      {/* Abstract Background Pattern (Hero section style) */}
+      {/* Abstract Background Pattern */}
       <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
         <svg className="w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
           <path d="M0 0 C 50 100 80 100 100 0 Z" fill="white"></path>
@@ -26,7 +26,6 @@ const WhyChooseUs = () => {
             </p>
 
             <div className="space-y-6">
-              {/* Certified Experts */}
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
                   <MdVerifiedUser />
@@ -39,7 +38,6 @@ const WhyChooseUs = () => {
                 </div>
               </div>
 
-              {/* Individualized Plans */}
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
                   <MdEditNote />
@@ -52,7 +50,6 @@ const WhyChooseUs = () => {
                 </div>
               </div>
 
-              {/* Flexible Settings */}
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
                   <MdHealthAndSafety />
@@ -67,39 +64,71 @@ const WhyChooseUs = () => {
             </div>
           </div>
 
-          {/* Right Column */}
+          {/* Right Column with FormSubmit */}
           <div className="relative">
-            <div className="bg-white/10 rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl transform   backdrop-blur-md">
+            <div className="bg-white/10 rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-4">Ready to start the journey?</h3>
               <p className="text-white/80 mb-8">
                 Schedule a free 15-minute consultation to discuss your child's needs and how we can help.
               </p>
-              <form className="space-y-4 text-left">
-                <div>
-                  <label className="text-sm font-semibold text-white ml-1">Parent's Name</label>
-                  <input
-                    className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 focus:ring-2 focus:ring-white focus:bg-white/30 transition-all"
-                    placeholder="Enter your full name"
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <label className="text-sm font-semibold text-white ml-1">Email Address</label>
-                  <input
-                    className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 focus:ring-2 focus:ring-white focus:bg-white/30 transition-all"
-                    placeholder="you@example.com"
-                    type="email"
-                  />
-                </div>
-                <button
-                  className="w-full py-3 bg-orange-400 hover:bg-orange-600 text-white font-bold rounded-lg shadow-lg mt-2 transition-colors"
-                  type="button"
-                >
-                  Request Consultation
-                </button>
-              </form>
+<form
+  action="https://formsubmit.co/rahulwp24@gmail.com"
+  method="POST"
+  onSubmit={(e) => {
+    e.preventDefault();
+    fetch(e.target.action, {
+      method: "POST",
+      body: new FormData(e.target),
+    }).then(() => {
+      alert("Form submitted successfully!");
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 2000);
+    });
+  }}
+  className="space-y-4 text-left"
+>
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_subject" value="New Consultation Request - Special Effects" />
+  <input type="hidden" name="_template" value="table" />
+  {/* REMOVE _next redirect */}
+
+  <div>
+    <label className="text-sm font-semibold text-white ml-1">Parent's Name</label>
+    <input
+      name="parent_name"
+      type="text"
+      required
+      className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 focus:ring-2 focus:ring-white focus:bg-white/40 transition-all"
+      placeholder="Enter your full name"
+    />
+  </div>
+
+  <div>
+    <label className="text-sm font-semibold text-white ml-1">Email Address</label>
+    <input
+      name="email"
+      type="email"
+      required
+      className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 focus:ring-2 focus:ring-white focus:bg-white/40 transition-all"
+      placeholder="you@example.com"
+    />
+  </div>
+
+  <button
+    type="submit"
+    className="w-full py-3 bg-orange-400 hover:bg-orange-600 text-white font-bold rounded-lg shadow-lg mt-2 transition-colors"
+  >
+    Request Consultation
+  </button>
+</form>
+
+
+
+
             </div>
           </div>
+
         </div>
       </div>
     </section>

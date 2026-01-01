@@ -35,14 +35,14 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section className="px-6 py-16 lg:px-20 bg-white">
-      <div className="max-w-[960px] mx-auto flex flex-col gap-12">
+    <section className="px-4 sm:px-6 py-12 sm:py-16 lg:px-20 bg-white">
+      <div className="max-w-[960px] mx-auto flex flex-col gap-8 sm:gap-12">
         {/* Section Title */}
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-[#1E3A8A] text-3xl font-extrabold leading-tight mb-4">
+        <div className="text-center max-w-2xl mx-auto px-2">
+          <h2 className="text-[#1E3A8A] text-2xl sm:text-3xl font-extrabold leading-tight mb-3 sm:mb-4">
             How Our Services Work
           </h2>
-          <p className="text-[#475569]">
+          <p className="text-[#475569] text-sm sm:text-base">
             We make the process simple and transparent so you can focus on what
             matters most: your child.
           </p>
@@ -50,8 +50,13 @@ export default function ProcessSection() {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Vertical line */}
+          {/* Desktop Vertical line */}
           <div className="absolute left-6 top-6 bottom-6 w-0.5 bg-blue-100 md:left-1/2 md:-ml-0.5 hidden md:block"></div>
+
+          {/* Mobile vertical line container */}
+          <div className="absolute left-6 top-0 bottom-0 hidden md:hidden">
+            <div className="absolute top-6 bottom-6 w-0.5 bg-blue-100"></div>
+          </div>
 
           {steps.map((step, index) => {
             const StepIcon = iconMap[step.icon];
@@ -60,14 +65,45 @@ export default function ProcessSection() {
             return (
               <div
                 key={step.id}
-                className={`relative flex flex-col md:flex-row gap-8 md:gap-0 items-center mb-12 ${
+                className={`relative flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-0 items-start md:items-center mb-10 sm:mb-12 ${
                   step.id === steps.length ? "mb-0" : ""
                 } group`}
               >
+                {/* Mobile Layout (always left-aligned) */}
+                <div className="flex w-full md:hidden">
+                  {/* Icon with connector line */}
+                  <div className="relative flex flex-col items-center mr-4 sm:mr-6">
+                    <div
+                      className={`relative z-10 flex items-center justify-center size-10 sm:size-12 rounded-full shadow-lg shrink-0 transition-all duration-300 ${
+                        isActive
+                          ? "bg-[#1E3A8A] text-white border-2 border-[#1E3A8A]"
+                          : "bg-white text-orange-400 border-2 border-orange-400 group-hover:border-[#1E3A8A] group-hover:text-[#1E3A8A]"
+                      }`}
+                    >
+                      {StepIcon && <StepIcon className="text-xl sm:text-2xl" />}
+                    </div>
+                    {/* Connect dots for all but last step */}
+                    {index < steps.length - 1 && (
+                      <div className="absolute top-10 sm:top-12 -bottom-10 sm:-bottom-12 w-0.5 bg-blue-100"></div>
+                    )}
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-[#1E3A8A]">
+                      {step.id}. {step.title}
+                    </h3>
+                    <p className="text-[#475569] text-sm sm:text-base mt-1 sm:mt-2">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Desktop Layout */}
                 {step.align === "left" ? (
                   <>
                     {/* Left Content */}
-                    <div className="flex-1 md:text-right md:pr-12">
+                    <div className="flex-1 md:text-right md:pr-12 hidden md:block">
                       <h3 className="text-xl font-bold text-[#1E3A8A]">
                         {step.id}. {step.title}
                       </h3>
@@ -76,7 +112,7 @@ export default function ProcessSection() {
 
                     {/* Icon */}
                     <div
-                      className={`relative z-10 flex items-center justify-center size-12 rounded-full shadow-lg shrink-0 transition-all duration-300 ${
+                      className={`relative z-10 flex items-center justify-center size-12 rounded-full shadow-lg shrink-0 transition-all duration-300 hidden md:flex ${
                         isActive
                           ? "bg-[#1E3A8A] text-white border-2 border-[#1E3A8A]"
                           : "bg-white text-orange-400 border-2 border-orange-400 group-hover:border-[#1E3A8A] group-hover:text-[#1E3A8A]"
@@ -93,7 +129,7 @@ export default function ProcessSection() {
 
                     {/* Icon */}
                     <div
-                      className={`relative z-10 flex items-center justify-center size-12 rounded-full shadow-lg shrink-0 transition-all duration-300 ${
+                      className={`relative z-10 flex items-center justify-center size-12 rounded-full shadow-lg shrink-0 transition-all duration-300 hidden md:flex ${
                         isActive
                           ? "bg-[#1E3A8A] text-white border-2 border-[#1E3A8A]"
                           : "bg-white text-orange-400 border-2 border-orange-400 group-hover:border-[#1E3A8A] group-hover:text-[#1E3A8A]"
@@ -103,7 +139,7 @@ export default function ProcessSection() {
                     </div>
 
                     {/* Right Content */}
-                    <div className="flex-1 md:pl-12">
+                    <div className="flex-1 md:pl-12 hidden md:block">
                       <h3 className="text-xl font-bold text-[#1E3A8A]">
                         {step.id}. {step.title}
                       </h3>
