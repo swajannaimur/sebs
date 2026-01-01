@@ -94,32 +94,64 @@ const WhyChooseUs = () => {
                 Schedule a free 15-minute consultation to discuss your child's
                 needs and how we can help.
               </p>
-              <form className="space-y-4 text-left">
+
+              <form
+                action="https://formsubmit.co/rahulwp24@gmail.com"
+                method="POST"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  fetch(e.target.action, {
+                    method: "POST",
+                    body: new FormData(e.target),
+                  }).then(() => {
+                    alert("Form submitted successfully!");
+                    setTimeout(() => {
+                      window.location.href = "/";
+                    }, 2000);
+                  });
+                }}
+                className="space-y-4 text-left"
+              >
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Consultation Request - Special Effects"
+                />
+                <input type="hidden" name="_template" value="table" />
+                {/* REMOVE _next redirect */}
+
                 <div>
                   <label className="text-sm font-semibold text-white ml-1">
                     Parent's Name
                   </label>
                   <input
+                    name="parent_name"
                     type="text"
-                    placeholder="Enter your full name"
+                    required
                     className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 
              focus:outline-none focus:ring-2 focus:ring-orange-400 focus:bg-white/30 transition-all"
+                    placeholder="Enter your full name"
                   />
                 </div>
+
                 <div>
                   <label className="text-sm font-semibold text-white ml-1">
                     Email Address
                   </label>
-                   <input
+                  <input
+                    name="email"
                     type="email"
-                    placeholder="you@gmail.com"
+                    required
                     className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 
              focus:outline-none focus:ring-2 focus:ring-orange-400 focus:bg-white/30 transition-all"
+                    placeholder="you@example.com"
                   />
                 </div>
+
                 <button
-                  className="w-full py-3 bg-orange-400 hover:bg-orange-600 hover:-translate-y-0.5 duration-300 cursor-pointer text-white font-bold rounded-lg shadow-lg mt-2 transition-all"
-                  type="button"
+                  type="submit"
+                  className="w-full py-3 hover:-translate-y-0.5 bg-orange-400 hover:bg-orange-600 text-white font-bold rounded-lg shadow-lg mt-2 transition-all duration-300 cursor-pointer"
                 >
                   Request Consultation
                 </button>
