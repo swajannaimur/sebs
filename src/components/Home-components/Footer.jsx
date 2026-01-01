@@ -55,19 +55,7 @@ export default function Footer() {
               Subscribe to get updates and helpful resources.
             </p>
 
-            {/* <form className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-lg bg-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#F97316]"
-              />
-              <button
-                type="submit"
-                className="px-6 py-2 rounded-lg bg-[#F97316] hover:bg-orange-600 hover:-translate-y-0.5 duration-300 cursor-pointer text-white text-sm font-bold transition-all"
-              >
-                Subscribe
-              </button>
-            </form> */}
+        
 
             <form
               action="https://formsubmit.co/rahulwp24@gmail.com"
@@ -90,7 +78,7 @@ export default function Footer() {
               <input
                 type="hidden"
                 name="_next"
-                value="http://localhost:3000/"
+                value="https://sebs-rosy.vercel.app/"
               />
 
               {/* Auto response to user */}
