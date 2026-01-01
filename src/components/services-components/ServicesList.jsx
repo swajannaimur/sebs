@@ -4,14 +4,17 @@ import {
   MdDiversity3,
   MdHome,
   MdSchool,
-} from "react-icons/md"; // <-- replaced MdHomeHealth with MdHome
+  MdRecordVoiceOver,
+  MdGroups,
+} from "react-icons/md";
 
-/* Icon map */
 export const iconMap = {
   extension: MdExtension,
   diversity_3: MdDiversity3,
-  home_health: MdHome, // <-- updated
+  home_health: MdHome,
   school: MdSchool,
+  speech: MdRecordVoiceOver,
+  community: MdGroups,
 };
 
 const services = [
@@ -26,6 +29,26 @@ const services = [
   },
   {
     id: 2,
+    icon: "speech",
+    title: "Speech Therapy",
+    description:
+      "Individualized speech and language therapy focused on improving communication, articulation, expressive language, and social communication skills.",
+    helps: "Children with speech or language delays",
+    goal: "Clear communication & confidence",
+  },
+
+  {
+    id: 3,
+    icon: "community",
+    title: "Community Services",
+    description:
+      "Support that helps individuals apply learned skills in real-world settings such as parks, stores, and community programs.",
+    helps: "Children and adolescents in daily environments",
+    goal: "Independence & community inclusion",
+  },
+
+  {
+    id: 4,
     icon: "diversity_3",
     title: "Social Skills Groups",
     description:
@@ -34,29 +57,29 @@ const services = [
     goal: "Social fluency & confidence",
   },
   {
-    id: 3,
+    id: 5,
     icon: "home_health",
     title: "Parent Coaching",
     description:
-      "We empower parents and caregivers with practical strategies to support their child's development consistently at home.",
-    helps: "Parents, caregivers, and siblings",
-    goal: "Consistent home support & family harmony",
+      "Collaborative coaching that equips parents and caregivers with practical, evidence-based strategies to support learning and behavior at home.",
+    helps: "Parents, caregivers, and families",
+    goal: "Consistency, confidence & family support",
   },
   {
-    id: 4,
+    id: 6,
     icon: "school",
     title: "School Consultation",
     description:
-      "Collaborative support for educators to create inclusive learning environments that cater to your child's specific learning profile.",
-    helps: "Students in classroom settings",
-    goal: "Academic integration & success",
+      "Partnership with educators and school teams to support inclusive classrooms and individualized learning success.",
+    helps: "Students in educational settings",
+    goal: "Academic participation & progress",
   },
 ];
 
 export default function ServicesList() {
   return (
     <section className="px-6 py-16 lg:px-20 bg-[#F8F7F5]">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((service) => (
             <ServiceCard key={service.id} service={service} />
