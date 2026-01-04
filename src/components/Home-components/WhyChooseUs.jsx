@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
             <div className="space-y-6">
               {/* Certified Experts */}
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
+                <div className="shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
                   <MdVerifiedUser />
                 </div>
                 <div>
@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
 
               {/* Individualized Plans */}
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
+                <div className="shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
                   <MdEditNote />
                 </div>
                 <div>
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
 
               {/* Flexible Settings */}
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
+                <div className="shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
                   <MdHealthAndSafety />
                 </div>
                 <div>

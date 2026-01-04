@@ -1,4 +1,4 @@
-export default function ContactUsHeding() {
+export default function ContactHeading() {
   return (
     <section className="relative w-full py-16 md:py-24 lg:py-32 bg-primary overflow-hidden text-center">
       <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
@@ -18,8 +18,8 @@ export default function ContactUsHeding() {
         </h1>
 
         <p className="text-blue-100 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto">
-          Taking the first step is often the hardest. We are here to listen and
-          support your family's journey towards growth and understanding.
+          Taking the first step is always the hardest. We are here to listen and
+          support your family's journey towards growth and understanding
         </p>
       </div>
     </section>
