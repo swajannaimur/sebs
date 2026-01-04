@@ -15,6 +15,7 @@ export default function Navbar() {
     { name: "Services", path: "/services" },
     { name: "Our Story", path: "/our-story" },
     { name: "Insurance & Payment", path: "/insurance" },
+    { name: "Contact Us", path: "/contact-us" },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
