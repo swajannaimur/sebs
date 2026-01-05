@@ -1,3 +1,5 @@
+"use client";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
@@ -11,7 +13,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div>
             <Link href="/">
-              <div className="flex items-center">
+              <div className="flex items-center cursor-pointer">
                 <Image
                   src="/images/Logo.png"
                   alt="logo"
@@ -48,21 +50,33 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Newsletter */}
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Newsletter</h3>
             <p className="text-white text-sm mb-4">
               Subscribe to get updates and helpful resources.
             </p>
 
-        
-
             <form
-              action="https://formsubmit.co/rahulwp24@gmail.com"
+              action="https://formsubmit.co/swajanwp@gmail.com"
               method="POST"
               className="flex flex-col sm:flex-row gap-3"
+              onSubmit={(e) => {
+                e.preventDefault();
+                fetch(e.currentTarget.action, {
+                  method: "POST",
+                  body: new FormData(e.currentTarget),
+                })
+                  .then(() => {
+                    alert("Thank you for subscribing! We'll keep you updated.");
+                    setTimeout(() => {
+                      window.location.href = "/";
+                    }, 1200);
+                  })
+                  .catch(() => {
+                    alert("Something went wrong. Please try again later.");
+                  });
+              }}
             >
-              {/* FormSubmit Configuration - MUST HAVE */}
               <input
                 type="hidden"
                 name="_subject"
@@ -71,24 +85,14 @@ export default function Footer() {
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
 
-              {/* Spam protection - hide this field */}
               <input type="text" name="_honey" style={{ display: "none" }} />
 
-              {/* Redirect after submit - optional but helpful */}
-              <input
-                type="hidden"
-                name="_next"
-                value="https://sebs-rosy.vercel.app/"
-              />
-
-              {/* Auto response to user */}
               <input
                 type="hidden"
                 name="_autoresponse"
                 value="Thank you for subscribing to our newsletter! We'll keep you updated with our latest services and resources."
               />
 
-              {/* Email field - MUST have name attribute */}
               <input
                 type="email"
                 name="email"
@@ -97,7 +101,6 @@ export default function Footer() {
                 className="w-full px-4 py-2 rounded-lg bg-slate-800 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#F97316]"
               />
 
-              {/* Submit button */}
               <button
                 type="submit"
                 className="px-6 py-2 rounded-lg bg-[#F97316] hover:bg-orange-600 hover:-translate-y-0.5 cursor-pointer text-white text-sm font-bold transition-all duration-300"
