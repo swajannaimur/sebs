@@ -68,9 +68,7 @@ export default function Footer() {
                 })
                   .then(() => {
                     alert("Thank you for subscribing! We'll keep you updated.");
-                    setTimeout(() => {
-                      window.location.href = "/";
-                    }, 1200);
+                    e.target.reset();
                   })
                   .catch(() => {
                     alert("Something went wrong. Please try again later.");
