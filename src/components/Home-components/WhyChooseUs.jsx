@@ -99,12 +99,14 @@ const WhyChooseUs = () => {
                   fetch(e.target.action, {
                     method: "POST",
                     body: new FormData(e.target),
-                  }).then(() => {
-                    alert("Form submitted successfully!");
-                    setTimeout(() => {
-                      window.location.href = "/";
-                    }, 2000);
-                  });
+                  })
+                    .then(() => {
+                      alert("Form submitted successfully!");
+                      e.target.reset();
+                    })
+                    .catch(() => {
+                      alert("Something went wrong. Please try again later.");
+                    });
                 }}
                 className="space-y-4 text-left"
               >
