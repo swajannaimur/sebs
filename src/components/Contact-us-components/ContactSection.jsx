@@ -34,8 +34,13 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
         {/* Left: Contact Form */}
         <div className="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1E3A8A] mb-2">Send us a message</h2>
-          <p className="text-slate-600 text-sm sm:text-base mb-6">Please fill out the form below. Your information is kept confidential.</p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1E3A8A] mb-2">
+            Send us a message
+          </h2>
+          <p className="text-slate-600 text-sm sm:text-base mb-6">
+            Please fill out the form below. Your information is kept
+            confidential.
+          </p>
 
           <form
             action="https://formsubmit.co/swajanwp@gmail.com"
@@ -45,17 +50,23 @@ const ContactSection = () => {
               fetch(e.target.action, {
                 method: "POST",
                 body: new FormData(e.target),
-              }).then(() => {
-                alert("Form submitted successfully!");
-                setTimeout(() => {
-                  window.location.href = "/";
-                }, 2000);
-              });
+              })
+                .then(() => {
+                  alert("Form submitted successfully!");
+                  e.target.reset();
+                })
+                .catch(() => {
+                  alert("Something went wrong. Please try again later.");
+                });
             }}
             className="space-y-5"
           >
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_subject" value="New Contact Form Submission - Special Effects" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact Form Submission - Special Effects"
+            />
             <input type="hidden" name="_template" value="table" />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -122,7 +133,9 @@ const ContactSection = () => {
         {/* Right Column */}
         <div className="lg:col-span-5 space-y-6">
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
-            <h3 className="text-xl font-bold text-[#1E3A8A] mb-6">Other ways to reach us</h3>
+            <h3 className="text-xl font-bold text-[#1E3A8A] mb-6">
+              Other ways to reach us
+            </h3>
 
             <div className="space-y-5">
               {contactInfo.map((item) => {
@@ -134,11 +147,18 @@ const ContactSection = () => {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-slate-800">{item.title}</h4>
-                      <p className="text-sm text-slate-500">{item.description}</p>
+                      <h4 className="font-semibold text-slate-800">
+                        {item.title}
+                      </h4>
+                      <p className="text-sm text-slate-500">
+                        {item.description}
+                      </p>
 
                       {item.href ? (
-                        <a href={item.href} className="text-[#1E3A8A] font-medium hover:underline text-sm">
+                        <a
+                          href={item.href}
+                          className="text-[#1E3A8A] font-medium hover:underline text-sm"
+                        >
                           {item.value}
                         </a>
                       ) : (
