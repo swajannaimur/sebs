@@ -5,7 +5,6 @@ import { MdVerifiedUser, MdEditNote, MdHealthAndSafety } from "react-icons/md";
 const WhyChooseUs = () => {
   return (
     <section className="relative py-20 overflow-hidden bg-primary">
-      {/* Abstract Background Pattern (Hero section style) */}
       <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
         <svg
           className="w-full h-full"
@@ -33,7 +32,6 @@ const WhyChooseUs = () => {
             </p>
 
             <div className="space-y-6">
-              {/* Certified Experts */}
               <div className="flex gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
                   <MdVerifiedUser />
@@ -49,7 +47,6 @@ const WhyChooseUs = () => {
                 </div>
               </div>
 
-              {/* Individualized Plans */}
               <div className="flex gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
                   <MdEditNote />
@@ -65,7 +62,6 @@ const WhyChooseUs = () => {
                 </div>
               </div>
 
-              {/* Flexible Settings */}
               <div className="flex gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
                   <MdHealthAndSafety />
