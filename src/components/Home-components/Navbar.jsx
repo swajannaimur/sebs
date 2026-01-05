@@ -47,10 +47,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/images/Logo.png"
+              src="/images/Logo0.png"
               alt="logo"
-              height={120}
-              width={120}
+              height={150}
+              width={150}
               priority
             />
           </Link>

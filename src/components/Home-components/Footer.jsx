@@ -14,12 +14,13 @@ export default function Footer() {
           <div>
             <Link href="/">
               <div className="flex items-center cursor-pointer">
-                <Image
-                  src="/images/Logo.png"
-                  alt="logo"
-                  height={120}
-                  width={120}
-                />
+                  <Image
+                              src="/images/Logo0.png"
+                              alt="logo"
+                              height={150}
+                              width={150}
+                              priority
+                            />
               </div>
             </Link>
 
