@@ -82,7 +82,7 @@ const WhyChooseUs = () => {
 
           {/* Right Column */}
           <div className="relative">
-            <div className="bg-white/10 rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl transform   backdrop-blur-md">
+            <div className="bg-white/10 rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl transform backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-4">
                 Ready to start the journey?
               </h3>
@@ -92,7 +92,7 @@ const WhyChooseUs = () => {
               </p>
 
               <form
-                action="https://formsubmit.co/rahulwp24@gmail.com"
+                action="https://formsubmit.co/info@specialeffectsbs.com"
                 method="POST"
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -127,8 +127,7 @@ const WhyChooseUs = () => {
                     name="parent_name"
                     type="text"
                     required
-                    className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 
-             focus:outline-none focus:ring-2 focus:ring-orange-400 focus:bg-white/30 transition-all"
+                    className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:bg-white/30 transition-all"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -141,8 +140,7 @@ const WhyChooseUs = () => {
                     name="email"
                     type="email"
                     required
-                    className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 
-             focus:outline-none focus:ring-2 focus:ring-orange-400 focus:bg-white/30 transition-all"
+                    className="w-full mt-1 px-4 py-3 rounded-lg border-0 bg-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:bg-white/30 transition-all"
                     placeholder="you@example.com"
                   />
                 </div>

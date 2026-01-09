@@ -36,15 +36,8 @@ export default function OurApproach() {
 
         <div className="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div
-            className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 
-            transition-all duration-300 ease-out 
-            hover:scale-105 hover:-translate-y-2 hover:shadow-lg"
-          >
-            <div
-              className="w-14 h-14 rounded-xl bg-orange-100 text-primary flex items-center justify-center mb-6 
-              transition-transform duration-500 hover:rotate-20 hover:scale-110"
-            >
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-2 hover:shadow-lg">
+            <div className="w-14 h-14 rounded-xl bg-orange-100 text-primary flex items-center justify-center mb-6 transition-transform duration-500 hover:rotate-20 hover:scale-110">
               <FaUserAstronaut className="text-3xl text-orange-500" />
             </div>
             <h3 className="text-xl font-bold text-[#1E3A8A] mb-3">
@@ -58,15 +51,8 @@ export default function OurApproach() {
           </div>
 
           {/* Card 2 */}
-          <div
-            className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 
-            transition-all duration-300 ease-out 
-            hover:scale-[1.05] hover:-translate-y-2 hover:shadow-lg"
-          >
-            <div
-              className="w-14 h-14 rounded-xl bg-orange-100 text-accent flex items-center justify-center mb-6 
-              transition-transform duration-500 hover:rotate-[20deg] hover:scale-110"
-            >
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 transition-all duration-300 ease-out hover:scale-[1.05] hover:-translate-y-2 hover:shadow-lg">
+            <div className="w-14 h-14 rounded-xl bg-orange-100 text-accent flex items-center justify-center mb-6 transition-transform duration-500 hover:rotate-20 hover:scale-110">
               <LuHeart className="text-3xl text-orange-500" />
             </div>
             <h3 className="text-xl font-bold text-[#1E3A8A] mb-3">
@@ -79,15 +65,8 @@ export default function OurApproach() {
           </div>
 
           {/* Card 3 */}
-          <div
-            className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 
-            transition-all duration-300 ease-out 
-            hover:scale-[1.05] hover:-translate-y-2 hover:shadow-lg"
-          >
-            <div
-              className="w-14 h-14 rounded-xl bg-orange-100 text-purple-600 flex items-center justify-center mb-6 
-              transition-transform duration-500 hover:rotate-[20deg] hover:scale-110"
-            >
+          <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 transition-all duration-300 ease-out hover:scale-[1.05] hover:-translate-y-2 hover:shadow-lg">
+            <div className="w-14 h-14 rounded-xl bg-orange-100 text-purple-600 flex items-center justify-center mb-6 transition-transform duration-500 hover:rotate-20 hover:scale-110">
               <MdGroups2 className="text-3xl text-orange-500" />
             </div>
             <h3 className="text-xl font-bold text-[#1E3A8A] mb-3">

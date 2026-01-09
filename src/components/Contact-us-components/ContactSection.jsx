@@ -7,7 +7,7 @@ const contactInfo = [
     id: 1,
     title: "Phone",
     description: "Mon–Fri, 8am–6pm",
-    value: "(555) 123-4567",
+    value: "832-278-2395",
     icon: FaPhoneAlt,
     href: "tel:+15551234567",
   },
@@ -17,14 +17,7 @@ const contactInfo = [
     description: "Our team is happy to help",
     value: "hello@specialeffects.com",
     icon: FaEnvelope,
-    href: "mailto:hello@specialeffects.com",
-  },
-  {
-    id: 3,
-    title: "Office",
-    description: "Visit our location",
-    value: "123 Therapy Lane, Suite 100, Springfield, IL 62704",
-    icon: FaMapMarkerAlt,
+    href: "info@specialeffectsbs.com",
   },
 ];
 
@@ -43,7 +36,7 @@ const ContactSection = () => {
           </p>
 
           <form
-            action="https://formsubmit.co/swajanwp@gmail.com"
+            action="https://formsubmit.co/info@specialeffectsbs.com"
             method="POST"
             onSubmit={(e) => {
               e.preventDefault();

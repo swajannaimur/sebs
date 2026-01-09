@@ -14,13 +14,13 @@ export default function Footer() {
           <div>
             <Link href="/">
               <div className="flex items-center cursor-pointer">
-                  <Image
-                              src="/images/Logo0.png"
-                              alt="logo"
-                              height={150}
-                              width={150}
-                              priority
-                            />
+                <Image
+                  src="/images/footerLogo.png"
+                  alt="logo"
+                  height={120}
+                  width={120}
+                  priority
+                />
               </div>
             </Link>
 
@@ -58,7 +58,7 @@ export default function Footer() {
             </p>
 
             <form
-              action="https://formsubmit.co/swajanwp@gmail.com"
+              action="https://formsubmit.co/info@specialeffectsbs.com"
               method="POST"
               className="flex flex-col sm:flex-row gap-3"
               onSubmit={(e) => {

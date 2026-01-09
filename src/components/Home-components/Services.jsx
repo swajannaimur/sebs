@@ -16,21 +16,21 @@ const Services = () => {
       title: "Social Skills Groups",
       description:
         "Guided group sessions to practice interaction, sharing, and communication.",
-      image: "/images/social.jpg",
+      image: "/images/social.png",
       alt: "Group of diverse children playing together in a circle",
     },
     {
       title: "Parent Coaching",
       description:
         "Empowering parents with tools and strategies for the home environment.",
-      image: "/images/twoadults.jpg",
+      image: "/images/parent.png",
       alt: "Parent and therapist discussing notes in a living room setting",
     },
     {
       title: "School Consultation",
       description:
         "Collaborating with educators to support your child's success in the classroom.",
-      image: "/images/School.jpg",
+      image: "/images/school.png",
       alt: "Young girl drawing with crayons at a school desk",
     },
   ];

@@ -8,13 +8,13 @@ const WhoWeHelp = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-10">
         <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-center">
           <div className="flex-1 order-2 md:order-1">
-            <div className="relative rounded-2xl overflow-hidden aspect-square md:aspect-[4/3] shadow-xl">
+            <div className="relative rounded-2xl overflow-hidden aspect-square md:aspect-4/3 shadow-xl">
               {/* Alt: Therapist helping a young child with a puzzle game */}
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
                   backgroundImage:
-                    "url('./images/who.jpg')",
+                    "url('./images/speech.avif')",
                 }}
               ></div>
             </div>
