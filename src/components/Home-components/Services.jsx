@@ -23,7 +23,7 @@ const Services = () => {
       title: "Parent Coaching",
       description:
         "Empowering parents with tools and strategies for the home environment.",
-      image: "/images/parent.png",
+      image: "/images/parentC.png",
       alt: "Parent and therapist discussing notes in a living room setting",
     },
     {
@@ -46,7 +46,7 @@ const Services = () => {
           <h2 className="text-[#1E3A8A] font-bold text-lg uppercase tracking-widest mb-2">
             Our Services
           </h2>
-          <h3 className="text-3xl md:text-4xl font-extrabold text-orange-500">
+          <h3 className="text-3xl md:text-4xl font-extrabold text-orange-400">
             Tailored Programs for Unique Needs
           </h3>
         </div>

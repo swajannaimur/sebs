@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const contactInfo = [
   {
@@ -15,7 +15,7 @@ const contactInfo = [
     id: 2,
     title: "Email",
     description: "Our team is happy to help",
-    value: "hello@specialeffects.com",
+    value: "info@specialeffectsbs.com",
     icon: FaEnvelope,
     href: "info@specialeffectsbs.com",
   },
